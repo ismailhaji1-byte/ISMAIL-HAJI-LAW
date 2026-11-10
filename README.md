@@ -1,24 +1,31 @@
-# ADV. ISMAIL HAJI LAW OFFICE — ismailhajilaw
+# ISMAIL HAJI LAW OFFICE — Static website
 
-English-only static website for the law office, including generated public pages, search data, a WordPress content handover, and project documentation.
+Live website: https://ismail-haji-law.avvismailhaji1.workers.dev/en/
 
-## Build and test
+- Hosting: Cloudflare Workers with Static Assets (not Cloudflare Pages).
+- Worker: `ismail-haji-law`
+- Source: https://github.com/ismailhaji1-byte/ISMAIL-HAJI-LAW
+- Production branch: `main`
+- GitHub owner login: `ismailhaji1-byte`
+- Cloudflare account email and office email: `avvismailhaji1@gmail.com`
+- Office phone / WhatsApp: `+252 61 5811256`
 
-Requires Node.js 22 or later. There are no third-party runtime dependencies.
+## Build and deploy
+Node.js 22 or later.
 
 ```bash
+npm install
 npm test
 npm run build
+npx wrangler deploy
 ```
 
-The build writes the deployable static website to `dist/`. It generates the 32 English pages, assets, search index, security headers, 404 page, and WordPress draft blocks.
+The static site is generated in `dist/`. Cloudflare Workers Builds is connected to GitHub. Verify the build and live site after deployment.
 
-## Cloudflare Pages
+## Visitor contact
+The site offers WhatsApp, email and phone contact. The office confirms appointment times manually. There is no online booking calendar, enquiry form, database or secure client document upload. Do not ask visitors to send confidential information through ordinary WhatsApp or Gmail.
 
-For Git integration, select this repository and branch `main`, choose **No framework**, set the build command to `node scripts/build.mjs`, and set the output directory to `dist`. Request the project name `ismailhajilaw`; Cloudflare will assign the `pages.dev` subdomain if that name is available.
+## Content
+Five Somali editorial articles and ten fictional English learning case studies. The cases are not real judgments. A qualified lawyer must review all legal material and confirm publication permissions.
 
-## Important before public use
-
-The contact form currently validates in the browser only. It does not send, store, or transmit enquiries. Do not use it for confidential client information until a secure backend and privacy process are configured.
-
-Legal articles and case studies are editorial/educational drafts. A qualified lawyer must review and approve them before publication as professional advice or real court records. Hypothetical cases must remain clearly labelled as hypothetical.
+Read `docs/OWNER-HANDOVER-SO.md` for account status, backups, recovery steps and outstanding items.
