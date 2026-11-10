@@ -65,7 +65,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "consultation.jpg",
+    "image": "case-legal-review.webp",
     "imageAlt": "Illustrative business consultation; not actual parties to a dispute",
     "featured": false
   },
@@ -203,7 +203,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "consultation.jpg",
+    "image": "case-legal-review.webp",
     "imageAlt": "Illustrative consultation scene; not an actual employer or worker",
     "featured": false
   },
@@ -272,8 +272,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "consultation.jpg",
-    "imageAlt": "Illustrative family consultation; not a real family or proceeding",
+    "image": "consultation.jpg",    "imageAlt": "Illustrative family consultation; not a real family or proceeding",
     "featured": false
   },
   {
@@ -341,7 +340,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "justice.svg",
+    "image": "case-forensics.webp",
     "imageAlt": "Illustrative justice scales artwork; not a real criminal case",
     "featured": false
   },
@@ -410,7 +409,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "arrest-bars.webp",
+    "image": "case-arrest.webp",
     "imageAlt": "Illustrative hands holding jail bars; not a real detainee or custody event",
     "featured": false
   },
@@ -479,7 +478,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "money-laundering.webp",
+    "image": "case-financial.webp",
     "imageAlt": "Illustrative currency image; not evidence of an actual transaction",
     "featured": false
   },
@@ -548,7 +547,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "consultation.jpg",
+    "image": "case-legal-review.webp",
     "imageAlt": "Illustrative consultation image; not an actual customer or transaction",
     "featured": false
   },

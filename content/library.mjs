@@ -444,7 +444,7 @@ export const records = [
     "featured": true,
     "location": "Banaadir",
     "category": "Criminal Case",
-    "image": "justice.svg",
+    "image": "case-forensics.webp",
     "imageAlt": "Illustrative scales of justice artwork; not a real case"
   },
   {
