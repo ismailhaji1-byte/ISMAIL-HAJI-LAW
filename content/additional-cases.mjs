@@ -65,7 +65,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "case-legal-review.webp",
+    "image": "consultation.jpg",
     "imageAlt": "Illustrative business consultation; not actual parties to a dispute",
     "featured": false
   },
@@ -203,7 +203,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "case-legal-review.webp",
+    "image": "consultation.jpg",
     "imageAlt": "Illustrative consultation scene; not an actual employer or worker",
     "featured": false
   },
@@ -340,7 +340,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "case-forensics.webp",
+    "image": "legal-gavel.webp",
     "imageAlt": "Illustrative justice scales artwork; not a real criminal case",
     "featured": false
   },
@@ -409,7 +409,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "case-arrest.webp",
+    "image": "arrest-bars.webp",
     "imageAlt": "Illustrative hands holding jail bars; not a real detainee or custody event",
     "featured": false
   },
@@ -547,7 +547,7 @@ export const additionalCases = [
     ],
     "language": "en",
     "originalLanguage": "en",
-    "image": "case-legal-review.webp",
+    "image": "consultation.jpg",
     "imageAlt": "Illustrative consultation image; not an actual customer or transaction",
     "featured": false
   },
