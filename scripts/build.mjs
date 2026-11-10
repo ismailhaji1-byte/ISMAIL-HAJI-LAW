@@ -6,6 +6,9 @@ import {records,sources} from '../content/library.mjs';
 import * as ui from '../src/templates.mjs';
 import {normalize} from '../src/search-core.js';
 import {exportWordPress} from './wordpress.mjs';
+import {additionalCases} from '../content/additional-cases.mjs';
+import {buildSomaliPages} from './somali-pages.mjs';
+records.push(...additionalCases);
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const dist=path.join(root,'dist'),l='en',u=labels.en,pages=[];
 await mkdir(path.join(dist,'assets'),{recursive:true});
@@ -24,6 +27,7 @@ for(const p of practices)index.push({id:p.id,language:l,url:ui.route(l,`practice
 await writeFile(path.join(dist,'search-index.json'),JSON.stringify(index));
 for(const asset of ['styles.css','premium.css','app.js','search-core.js','desktop-fit.js'])await copyFile(path.join(root,'src',asset),path.join(dist,asset));
 for(const asset of await readdir(path.join(root,'src/assets')))await copyFile(path.join(root,'src/assets',asset),path.join(dist,'assets',asset));
+await buildSomaliPages(root,dist);
 await writeFile(path.join(dist,'index.html'),`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1280"><meta name="robots" content="index,follow"><title>${brand.name}</title><meta http-equiv="refresh" content="0;url=/en/"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/premium.css"><script src="/desktop-fit.js"></script></head><body><main class="not-found"><h1>${brand.name}</h1><a href="/en/">Home</a></main></body></html>`);
 await writeFile(path.join(dist,'404.html'),`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=1280"><meta name="robots" content="index,follow"><title>Page not found | ${brand.name}</title><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/premium.css"><script src="/desktop-fit.js"></script></head><body><main class="not-found"><div class="eyebrow">404</div><h1>Page not found</h1><p>The address may have changed.</p><a class="button" href="/en/">Home</a></main></body></html>`);
 await writeFile(path.join(dist,'robots.txt'),'User-agent: *\nAllow: /\n');
