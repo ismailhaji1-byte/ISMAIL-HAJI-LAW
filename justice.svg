@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" fill="none">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="700" y2="800" gradientUnits="userSpaceOnUse"><stop stop-color="#101722"/><stop offset=".55" stop-color="#18212b"/><stop offset="1" stop-color="#080b10"/></linearGradient>
+ <linearGradient id="stone"><stop stop-color="#b6a47f"/><stop offset=".32" stop-color="#ffffff"/><stop offset=".7" stop-color="#dfd2ad"/><stop offset="1" stop-color="#756b54"/></linearGradient>
+ <linearGradient id="edge"><stop stop-color="#756b54"/><stop offset=".35" stop-color="#101722"/><stop offset="1" stop-color="#bda878"/></linearGradient>
+ <linearGradient id="gold" x1="150" y1="300" x2="570" y2="600" gradientUnits="userSpaceOnUse"><stop stop-color="#c29232"/><stop offset=".5" stop-color="#f5d187"/><stop offset="1" stop-color="#8a621d"/></linearGradient>
+ <radialGradient id="light" cx=".1" cy=".1" r=".9"><stop stop-color="#ffffff" stop-opacity=".25"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="13"/></filter>
+ <pattern id="flute" width="22" height="100" patternUnits="userSpaceOnUse"><rect width="22" height="100" fill="url(#stone)"/></pattern>
+</defs>
+<path fill="url(#bg)" d="M0 0h720v840H0z"/>
+<path fill="url(#light)" d="M0 0h720v840H0z"/>
+<path d="M92 690V279a268 268 0 1 1 536 0v411" stroke="#94876b" stroke-opacity=".22" stroke-width="1"/>
+<path d="M116 690V280a244 244 0 1 1 488 0v410" stroke="#94876b" stroke-opacity=".18" stroke-width="1"/>
+<path d="M0 674h720v166H0z" fill="#0b1b26"/>
+<path d="m0 840 355-166 365 166M0 780h720M0 720h720" stroke="#756b54" stroke-opacity=".3"/>
+<path d="m240 760 290-80 120 100-280 50z" fill="#000" opacity=".28" filter="url(#shadow)"/>
+<g opacity=".36"><path d="M590 145h82v515h-82z" fill="url(#flute)"/><path d="M577 119h108v18H577zm7 18h94v16h-94zm-7 523h108v20H577z" fill="url(#stone)"/></g>
+<g><path d="M55 98h115v576H55z" fill="url(#flute)"/><path d="M39 54h147v22H39zM46 76h133v22H46zM39 674h148v22H39zM26 696h174v24H26z" fill="url(#stone)"/><path d="M39 54h147v5H39zM46 76h133v4H46zM39 674h148v5H39z" fill="#101722" opacity=".5"/></g>
+<path d="M227 682h290v35H227z" fill="url(#edge)"/><path d="M215 717h314v27H215z" fill="url(#stone)"/><path d="M198 744h348v32H198z" fill="url(#edge)"/>
+<path d="M306 663h132l22 19H284z" fill="url(#gold)"/>
+<path d="M353 631h38l32 32H320z" fill="url(#gold)"/>
+<path d="M368 328h9v303h-9z" fill="url(#gold)"/>
+<path d="m372 277 10 22-10 22-10-22z" fill="url(#gold)"/>
+<circle cx="372" cy="328" r="14" fill="url(#gold)"/>
+<path d="m222 363 150-35 150 35" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+<path d="m222 363-65 143h130l-65-143zm300 0-65 143h130l-65-143z" stroke="url(#gold)" stroke-width="2"/>
+<path d="M153 506c9 44 128 44 138 0zm300 0c9 44 128 44 138 0z" fill="url(#gold)"/>
+<path d="M159 507h126m174 0h126" stroke="#18212b" stroke-width="2"/>
+<path d="M215 363h14m286 0h14" stroke="#f5d187" stroke-width="3"/>
+<path d="M0 0h720v840H0z" fill="url(#light)"/>
+<path d="M30 28h20m-10-10v20M670 28h20m-10-10v20" stroke="#bda878" opacity=".5"/>
+</svg>
