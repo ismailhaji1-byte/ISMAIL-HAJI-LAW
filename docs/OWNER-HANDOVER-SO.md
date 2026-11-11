@@ -1,22 +1,33 @@
 # ISMAIL HAJI LAW OFFICE — Hagaha Xogta, Lahaanshaha iyo Dayactirka
 
-**Taariikh:** 10 November 2026
+**Taariikh:** 11 November 2026
 
-## Website-ka bilaashka ah
-URL-ka hadda shaqaynaya: https://ismail-haji-law.avvismailhaji1.workers.dev/en/
+## Website-ka hadda loo adeegsado (Vercel)
 
-- Worker name: `ismail-haji-law`
-- Account subdomain: `avvismailhaji1`
-- Hosting: Cloudflare Workers Static Assets.
-- `workers.dev` waa bilaash.
+**Website URL:** https://ismail-haji-law-office-one.vercel.app/
 
-Workers URL wuxuu u samaysmaa `<worker-name>.<account-subdomain>.workers.dev`. Haddii milkiiluhu Cloudflare Dashboard ka doorto Workers & Pages → Change next to Your subdomain, iskuna dayo `ismailhajilaw`, URL-ka cusub wuxuu noqon karaa `ismail-haji-law.ismailhajilaw.workers.dev` haddii magaca la heli karo. Tani waxay beddelaysaa subdomain-ka account-ka oo dhan. Ha beddelin ilaa URL-ka cusub la tijaabiyo; kii hore wuu isbeddeli karaa.
+- Hosting: Vercel (Static Site).
+- Vercel project: `ismail-haji-law-office`.
+- Vercel project ID: `prj_HZkBX5VUsF5CnpEWlGmqOH5YLKhP`.
+- Team: `ismail-8faf` (Hobby/free plan).
+- Git repository: `ismailhaji1-byte/ISMAIL-HAJI-LAW`.
+- Production branch: `main`.
+- Build command: `npm run build`.
+- Output directory: `dist`.
+- Node.js: `22.x`.
+- Latest verified deployment status: `READY`.
+- Git integration: Vercel GitHub App installed; pushes to `main` deploy automatically.
 
-Hagaha Cloudflare: https://developers.cloudflare.com/workers/configuration/routing/workers-dev/
+Vercel project settings have public deployment access enabled; SSO/password/IP deployment protection is off so ordinary visitors can open the public website. Do not add paid products or domains without the office owner's approval.
 
-Domain sida `ismailhajilaw.com` bilaash ma aha; waa in la iibsadaa lana cusboonaysiiyaa. Domain gaar ah weli lama iibsan.
+## Cloudflare — adeeg hore/kaabaya
+
+Waxaa hore loo sameeyey Cloudflare Worker la yiraahdo `ismail-haji-law`, waxaana la isticmaalay Static Assets. Ha tirtirin Worker-ka ama ha beddelin Cloudflare account subdomain-ka ilaa milkiiluhu si gaar ah u ansixiyo oo URL-kiisa si gooni ah loo tijaabiyo. Vercel ayaa hadda ah hosting-ka production ee URL-ka kore.
+
+Domain gaar ah sida `ismailhajilaw.com` lama iibsan. URL-ka Vercel `.vercel.app` waa kan bilaashka ah ee hadda la adeegsanayo.
 
 ## Xiriirka xafiiska
+
 - Gmail: `avvismailhaji1@gmail.com`
 - WhatsApp: `+252 61 5811256`
 - Phone: `+252 61 5811256`
@@ -25,27 +36,19 @@ Domain sida `ismailhajilaw.com` bilaash ma aha; waa in la iibsadaa lana cusboona
 
 Ballamaha hadda gacanta ayaa WhatsApp/email lagu xaqiijiyaa. Ma jiro online booking calendar. Website-ku ma laha contact form shaqaynaya, database, client portal ama document upload.
 
-## Cloudflare — xaaladda akoonka
-Markii la hubiyey:
-- Xubinta keliya: `avvismailhaji1@gmail.com`
-- Status: Accepted.
-- Role: **Super Administrator — All Privileges**.
-- Worker secrets: midna kuma xirna.
-- Cloudflare 2FA: OFF.
+## GitHub — source-ka website-ka
 
-Email-ka xafiisku hore ayuu u hayaa full access Cloudflare. Invitation kale uma baahna. Shid 2FA, xaqiiji recovery email/phone, kuna kaydi recovery codes meel ammaan ah.
-
-## GitHub — xaaladda akoonka
 - Owner/login: `ismailhaji1-byte`
 - Repository: https://github.com/ismailhaji1-byte/ISMAIL-HAJI-LAW
 - Branch: `main`
 - Visibility: Public
 - Owner permission: admin.
-- Hubi GitHub Settings → Emails in `avvismailhaji1@gmail.com` la xaqiijiyey oo account-ka ku xiran yahay.
-- Tixgeli in repo-ga laga dhigo Private. Qof walba wuu arki karaa repo Public ah.
+- Vercel GitHub App waa la rakibay oo repository-ga waa lagu xiray.
+- Tixgeli in repo-ga laga dhigo Private haddii xafiisku doonayo source gaar ah. Qof walba wuu arki karaa repo Public ah.
 - Shid 2FA. Ha wadaagin password ama OTP.
 
 ## Source ZIP iyo backup
+
 Download source ZIP:
 https://github.com/ismailhaji1-byte/ISMAIL-HAJI-LAW/archive/refs/heads/main.zip
 
@@ -60,37 +63,41 @@ Backup procedure:
 5. Ha gelin backup-ka public website.
 
 ## Haddii website-ku cilad galo
-1. Fur Cloudflare → Workers & Pages → `ismail-haji-law`.
-2. Hubi Deployments/Versions iyo build status.
-3. Haddii Failed, fur Build logs oo kaydi khaladka koowaad.
-4. Ha tirtirin Worker ama repository.
-5. Haddii version cusub khalad keeno, dib ugu noqo version-kii ugu dambeeyey ee la xaqiijiyey.
-6. Sax source GitHub, mar kale build/deploy samee, kadib tijaabi homepage, Contact, maqaalada iyo kiisaska.
+
+1. Fur Vercel → Team `ismail-8faf` → Project `ismail-haji-law-office`.
+2. Hubi Deployments iyo build status.
+3. Haddii Failed, fur Build Logs oo kaydi khaladka koowaad.
+4. Ha tirtirin project-ka ama repository-ga.
+5. Haddii deployment cusub khalad keeno, Vercel Deployments ka dooro version-kii ugu dambeeyey ee la xaqiijiyey si rollback loo sameeyo.
+6. Sax source GitHub, mar kale build/deploy samee, kadib tijaabi homepage, Contact, Privacy, maqaalada iyo kiisaska.
 
 ## Amniga iyo xogta macaamiisha
+
 - Ha gelin client case files, aqoonsi, passwords, OTP, bank/card data ama xog sir ah GitHub ama website.
 - Ha ka codsan macaamiisha inay xog dacwadeed ku diraan WhatsApp/Gmail caadi ah.
 - Haddii mustaqbalka la sameeyo secure form/client portal, go'aami cidda xogta arki karta, meesha lagu kaydinayo, muddada la haynayo, habka tirtirka, encryption iyo kharashka ka hor hirgelinta.
 - Domain, hosting, email iyo adeeg kasta oo lacag leh waa in milkiiluhu ansixiyaa.
+- Shid 2FA GitHub iyo Cloudflare; kaydi recovery codes meel ammaan ah.
 
 ## Dayactir joogto ah
-- Toddobaad kasta: tijaabi website, phone, email iyo WhatsApp links.
-- Bil kasta: samee backup oo hubi Cloudflare deployments iyo isticmaalka adeegga.
-- Saddexdii biloodba: dib u eeg content, images, privacy notice, roles iyo access.
-- Sannad kasta: hubi domain renewal haddii domain gaar ah la iibsado.
-- Qor qofka masuulka ka ah support, billing, backup iyo content review.
 
-## Waxyaabaha harsan
-1. Beddel subdomain-ka `avvismailhaji1` una beddel `ismailhajilaw` haddii la heli karo; tani dashboard-ka ayaa laga beddelaa, waxayna saameyn kartaa URLs-ka account-ka.
-2. GitHub repo Private ka dhig haddii xafiisku doonayo source gaar ah.
-3. Shid 2FA GitHub iyo Cloudflare.
-4. Qareenku ha ansixiyo 5-ta maqaal, 10-ka hypothetical case studies, sawirrada iyo xuquuqda daabacaadda.
-5. Qareenku ha ansixiyo Privacy, Disclaimer iyo Terms.
-6. Automated tests-ka ha la waafajiyo bogagga hadda jira oo dib loo tijaabiyo.
+- Toddobaad kasta: tijaabi website, phone, email iyo WhatsApp links.
+- Bil kasta: samee backup oo hubi Vercel deployments iyo isticmaalka adeegga.
+- Saddexdii biloodba: dib u eeg content, images, privacy notice, roles iyo access.
+- Qor qofka masuulka ka ah support, backup iyo content review.
+
+## Waxyaabaha weli u baahan ansixin xafiiska
+
+1. Qareenku ha ansixiyo 5-ta maqaal, 10-ka hypothetical case studies, sawirrada iyo xuquuqda daabacaadda.
+2. Qareenku ha ansixiyo Privacy, Disclaimer iyo Terms ka hor inta aan loo qaadan qoraallo sharci oo kama dambays ah.
+3. Hubi 2FA iyo recovery options ee GitHub, Vercel iyo Cloudflare.
+4. Go'aami in GitHub repository-ga laga dhigo Private.
+5. Haddii domain gaar ah loo baahdo, milkiiluhu ha ansixiyo kharashka domain-ka iyo cusboonaysiintiisa.
 
 ## Saxiixa wareejinta
+
 Milkiilaha / Qareenka: ____________________  
 Qofka dayactirka: ____________________  
 Taariikhda: ____________________  
-Waxyaabaha la wareejiyey: Source ZIP / GitHub / Cloudflare / Backup / Documentation.  
+Waxyaabaha la wareejiyey: Website URL / GitHub / Vercel / Cloudflare / Backup / Documentation.  
 Waxyaabaha harsan: ______________________________________
