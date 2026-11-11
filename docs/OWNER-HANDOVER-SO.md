@@ -2,39 +2,39 @@
 
 **Taariikh:** 11 November 2026
 
-## Website-ka hadda loo adeegsado (Vercel)
+## Website-ka hadda dadweynuhu isticmaalaan
 
-**Website URL:** https://ismail-haji-law-office-one.vercel.app/
+**Cinwaanka rasmiga ah:** https://ismail-haji-law.avvismailhaji1.workers.dev/en/
 
-- Hosting: Vercel (Static Site).
-- Vercel project: `ismail-haji-law-office`.
+- Hosting-ka firfircoon: Cloudflare Workers Static Assets.
+- Worker: `ismail-haji-law`.
+- Account subdomain: `avvismailhaji1`.
+- Cinwaanka free-ka ah: `ismail-haji-law.avvismailhaji1.workers.dev`.
+- GitHub source: `ismailhaji1-byte/ISMAIL-HAJI-LAW`, branch `main`.
+- Static output: `dist`.
+- Worker subdomain iyo workers.dev routing waa enabled.
+- Deployment-kii ugu dambeeyey ee la hubiyey: Version 13, 100% traffic, 11 November 2026 09:07 UTC.
+- Cloudflare Browser Rendering ayaa si guul leh u soo qaaday homepage-ka iyo HTML-ga website-ka.
+- Domain gaar ah lama iibsan; URL-kan waa subdomain-ka bilaashka ah.
+
+## Vercel — deployment kayd ah
+
+Website-ku sidoo kale wuxuu ku jiraa Vercel project `ismail-haji-law-office` (Hobby/free plan), waxaana jira production deployment READY. Hase yeeshee, PC-ga xafiiska waxaa laga helay DNS resolution shaqaynaya laakiin TCP 443 timeout u dhexeeya PC-ga iyo Vercel IP-yada la tijaabiyey. Sidaas darteed Vercel looma adeegsanayo cinwaanka booqdayaasha ilaa ISP/network-gaas la hagaajiyo.
+
 - Vercel project ID: `prj_HZkBX5VUsF5CnpEWlGmqOH5YLKhP`.
-- Team: `ismail-8faf` (Hobby/free plan).
-- Git repository: `ismailhaji1-byte/ISMAIL-HAJI-LAW`.
-- Production branch: `main`.
-- Build command: `npm run build`.
-- Output directory: `dist`.
-- Node.js: `22.x`.
-- Latest verified deployment status: `READY`.
-- Git integration: Vercel GitHub App installed; pushes to `main` deploy automatically.
-
-Vercel project settings have public deployment access enabled; SSO/password/IP deployment protection is off so ordinary visitors can open the public website. Do not add paid products or domains without the office owner's approval.
-
-## Cloudflare — adeeg hore/kaabaya
-
-Waxaa hore loo sameeyey Cloudflare Worker la yiraahdo `ismail-haji-law`, waxaana la isticmaalay Static Assets. Ha tirtirin Worker-ka ama ha beddelin Cloudflare account subdomain-ka ilaa milkiiluhu si gaar ah u ansixiyo oo URL-kiisa si gooni ah loo tijaabiyo. Vercel ayaa hadda ah hosting-ka production ee URL-ka kore.
-
-Domain gaar ah sida `ismailhajilaw.com` lama iibsan. URL-ka Vercel `.vercel.app` waa kan bilaashka ah ee hadda la adeegsanayo.
+- Vercel URL: https://ismail-haji-law-office-one.vercel.app/
+- Vercel team: `ismail-8faf`.
+- Build: `npm run build`; output `dist`; Node `22.x`.
+- Ha tirtirin Vercel project-ka; u hay backup ahaan ilaa Cloudflare URL-ka laga xaqiijiyo PC-ga iyo shabakadaha xafiiska.
 
 ## Xiriirka xafiiska
 
 - Gmail: `avvismailhaji1@gmail.com`
-- WhatsApp: `+252 61 5811256`
-- Phone: `+252 61 5811256`
-- WhatsApp link: https://wa.me/252615811256
+- WhatsApp / Phone: `+252 61 5811256`
+- WhatsApp: https://wa.me/252615811256
 - Goobta: Mogadishu, Somalia.
 
-Ballamaha hadda gacanta ayaa WhatsApp/email lagu xaqiijiyaa. Ma jiro online booking calendar. Website-ku ma laha contact form shaqaynaya, database, client portal ama document upload.
+Ballamaha gacanta ayaa WhatsApp/email lagu xaqiijiyaa. Ma jiro online booking calendar, contact form shaqaynaya, database, client portal ama secure document upload.
 
 ## GitHub — source-ka website-ka
 
@@ -43,8 +43,8 @@ Ballamaha hadda gacanta ayaa WhatsApp/email lagu xaqiijiyaa. Ma jiro online book
 - Branch: `main`
 - Visibility: Public
 - Owner permission: admin.
-- Vercel GitHub App waa la rakibay oo repository-ga waa lagu xiray.
-- Tixgeli in repo-ga laga dhigo Private haddii xafiisku doonayo source gaar ah. Qof walba wuu arki karaa repo Public ah.
+- Vercel GitHub App iyo Cloudflare Workers and Pages GitHub App waxay ku jiraan GitHub Installed Apps.
+- Tixgeli in repo-ga laga dhigo Private haddii xafiisku doonayo source gaar ah. Repo Public ah qof walba wuu arki karaa.
 - Shid 2FA. Ha wadaagin password ama OTP.
 
 ## Source ZIP iyo backup
@@ -64,12 +64,12 @@ Backup procedure:
 
 ## Haddii website-ku cilad galo
 
-1. Fur Vercel → Team `ismail-8faf` → Project `ismail-haji-law-office`.
-2. Hubi Deployments iyo build status.
-3. Haddii Failed, fur Build Logs oo kaydi khaladka koowaad.
-4. Ha tirtirin project-ka ama repository-ga.
-5. Haddii deployment cusub khalad keeno, Vercel Deployments ka dooro version-kii ugu dambeeyey ee la xaqiijiyey si rollback loo sameeyo.
-6. Sax source GitHub, mar kale build/deploy samee, kadib tijaabi homepage, Contact, Privacy, maqaalada iyo kiisaska.
+1. Fur Cloudflare → Workers & Pages → Worker `ismail-haji-law`.
+2. Hubi Deployments/Versions iyo in traffic-ku 100% saaran yahay version-ka READY.
+3. Haddii Worker-ku error bixiyo, hubi logs-ka iyo in Static Assets ay jiraan.
+4. Ha tirtirin Worker-ka, account subdomain-ka, Vercel project-ka ama GitHub repository-ga.
+5. Haddii deployment cusub khalad keeno, Cloudflare Worker Versions ka dooro version-kii ugu dambeeyey ee la xaqiijiyey si rollback loo sameeyo.
+6. Sax source GitHub, build/deploy samee, kadib tijaabi homepage, Contact, Privacy, maqaalada iyo kiisaska.
 
 ## Amniga iyo xogta macaamiisha
 
@@ -82,7 +82,7 @@ Backup procedure:
 ## Dayactir joogto ah
 
 - Toddobaad kasta: tijaabi website, phone, email iyo WhatsApp links.
-- Bil kasta: samee backup oo hubi Vercel deployments iyo isticmaalka adeegga.
+- Bil kasta: samee backup oo hubi Cloudflare Worker versions, Vercel backup deployments iyo isticmaalka adeegga.
 - Saddexdii biloodba: dib u eeg content, images, privacy notice, roles iyo access.
 - Qor qofka masuulka ka ah support, backup iyo content review.
 
@@ -99,5 +99,5 @@ Backup procedure:
 Milkiilaha / Qareenka: ____________________  
 Qofka dayactirka: ____________________  
 Taariikhda: ____________________  
-Waxyaabaha la wareejiyey: Website URL / GitHub / Vercel / Cloudflare / Backup / Documentation.  
+Waxyaabaha la wareejiyey: Website URL / GitHub / Cloudflare / Vercel backup / Backup / Documentation.  
 Waxyaabaha harsan: ______________________________________
