@@ -2,20 +2,30 @@
 
 **Taariikh:** 11 November 2026
 
-## Website-ka hadda dadweynuhu isticmaalaan
+## Website-ka rasmiga ah (Primary)
 
-**Cinwaanka rasmiga ah:** https://ismail-haji-law.avvismailhaji1.workers.dev/en/
+**Cinwaanka booqdayaasha:** https://ismail-haji-law-office.pages.dev/en/
 
-- Hosting-ka firfircoon: Cloudflare Workers Static Assets.
-- Worker: `ismail-haji-law`.
-- Account subdomain: `avvismailhaji1`.
-- Cinwaanka free-ka ah: `ismail-haji-law.avvismailhaji1.workers.dev`.
+- Hosting-ka koowaad: Cloudflare Pages.
+- Project: `ismail-haji-law-office`.
+- Pages project ID: `d7beceb8-2302-48e8-aa1b-c06ed2ea49a4`.
+- Free hostname: `ismail-haji-law-office.pages.dev`.
 - GitHub source: `ismailhaji1-byte/ISMAIL-HAJI-LAW`, branch `main`.
-- Static output: `dist`.
-- Worker subdomain iyo workers.dev routing waa enabled.
-- Deployment-kii ugu dambeeyey ee la hubiyey: Version 13, 100% traffic, 11 November 2026 09:07 UTC.
-- Cloudflare Browser Rendering ayaa si guul leh u soo qaaday homepage-ka iyo HTML-ga website-ka.
-- Domain gaar ah lama iibsan; URL-kan waa subdomain-ka bilaashka ah.
+- Build command: `npm run build`; output directory: `dist`; Node.js: `22`.
+- Production deployment: `a87d34d6-609b-4a6f-a09f-d21011cafb5d`, status: success.
+- GitHub push-ku wuxuu kiciyaa Cloudflare Pages production build.
+- Cloudflare Browser Rendering wuxuu xaqiijiyey in homepage-ka Pages uu soo celiyo HTML-ga saxda ah, title-ka Home, Contact link iyo WhatsApp link.
+
+## Cloudflare Worker — cinwaan labaad
+
+Worker-kii hore waa la hayaa si uu u noqdo cinwaan kale oo Cloudflare ah.
+
+- Worker: `ismail-haji-law`.
+- Worker URL: https://ismail-haji-law.avvismailhaji1.workers.dev/en/
+- Account subdomain: `avvismailhaji1`.
+- Worker subdomain iyo workers.dev routing: enabled.
+- Worker deployment-kii ugu dambeeyey ee la hubiyey: Version 13, 100% traffic, 11 November 2026 09:07 UTC.
+- Worker wuxuu adeegsanayaa Static Assets; ha tirtirin.
 
 ## Vercel — deployment kayd ah
 
@@ -25,7 +35,7 @@ Website-ku sidoo kale wuxuu ku jiraa Vercel project `ismail-haji-law-office` (Ho
 - Vercel URL: https://ismail-haji-law-office-one.vercel.app/
 - Vercel team: `ismail-8faf`.
 - Build: `npm run build`; output `dist`; Node `22.x`.
-- Ha tirtirin Vercel project-ka; u hay backup ahaan ilaa Cloudflare URL-ka laga xaqiijiyo PC-ga iyo shabakadaha xafiiska.
+- Ha tirtirin Vercel project-ka; u hay backup ahaan.
 
 ## Xiriirka xafiiska
 
@@ -44,6 +54,7 @@ Ballamaha gacanta ayaa WhatsApp/email lagu xaqiijiyaa. Ma jiro online booking ca
 - Visibility: Public
 - Owner permission: admin.
 - Vercel GitHub App iyo Cloudflare Workers and Pages GitHub App waxay ku jiraan GitHub Installed Apps.
+- Cloudflare Pages project-ku wuxuu ku xiran yahay isla GitHub repository-ga.
 - Tixgeli in repo-ga laga dhigo Private haddii xafiisku doonayo source gaar ah. Repo Public ah qof walba wuu arki karaa.
 - Shid 2FA. Ha wadaagin password ama OTP.
 
@@ -64,12 +75,12 @@ Backup procedure:
 
 ## Haddii website-ku cilad galo
 
-1. Fur Cloudflare → Workers & Pages → Worker `ismail-haji-law`.
-2. Hubi Deployments/Versions iyo in traffic-ku 100% saaran yahay version-ka READY.
-3. Haddii Worker-ku error bixiyo, hubi logs-ka iyo in Static Assets ay jiraan.
-4. Ha tirtirin Worker-ka, account subdomain-ka, Vercel project-ka ama GitHub repository-ga.
-5. Haddii deployment cusub khalad keeno, Cloudflare Worker Versions ka dooro version-kii ugu dambeeyey ee la xaqiijiyey si rollback loo sameeyo.
-6. Sax source GitHub, build/deploy samee, kadib tijaabi homepage, Contact, Privacy, maqaalada iyo kiisaska.
+1. Fur Cloudflare → Workers & Pages → Pages project `ismail-haji-law-office`.
+2. Hubi Deployments iyo production build status.
+3. Haddii Pages deployment cusub khalad keeno, dooro production deployment-kii ugu dambeeyey ee guulaystay si rollback loo sameeyo.
+4. Haddii Pages uusan shaqayn, tijaabi cinwaanka Worker-ka labaad.
+5. Ha tirtirin Pages project, Worker-ka, account subdomain-ka, Vercel project-ka ama GitHub repository-ga.
+6. Sax source GitHub, push ku samee `main`, kadib tijaabi homepage, Contact, Privacy, maqaalada iyo kiisaska.
 
 ## Amniga iyo xogta macaamiisha
 
@@ -82,7 +93,7 @@ Backup procedure:
 ## Dayactir joogto ah
 
 - Toddobaad kasta: tijaabi website, phone, email iyo WhatsApp links.
-- Bil kasta: samee backup oo hubi Cloudflare Worker versions, Vercel backup deployments iyo isticmaalka adeegga.
+- Bil kasta: samee backup oo hubi Cloudflare Pages deployments, Worker versions, Vercel backup deployments iyo isticmaalka adeegga.
 - Saddexdii biloodba: dib u eeg content, images, privacy notice, roles iyo access.
 - Qor qofka masuulka ka ah support, backup iyo content review.
 
@@ -99,5 +110,5 @@ Backup procedure:
 Milkiilaha / Qareenka: ____________________  
 Qofka dayactirka: ____________________  
 Taariikhda: ____________________  
-Waxyaabaha la wareejiyey: Website URL / GitHub / Cloudflare / Vercel backup / Backup / Documentation.  
+Waxyaabaha la wareejiyey: Pages URL / Worker URL / GitHub / Cloudflare / Vercel backup / Backup / Documentation.  
 Waxyaabaha harsan: ______________________________________
